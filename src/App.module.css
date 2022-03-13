@@ -1,0 +1,121 @@
+.App {
+  text-align: center;
+  width: 100%;
+  /* max-height: 100vh; */
+  background: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.Container {
+  height: 100vH;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.Header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 50px;
+}
+
+.Connector {
+  padding: 20px;
+  border-radius: 5px;
+  background: #6184D8;
+  color: #fff;
+  font-family: 'Helvetica';
+  font-weight: 600;
+  font-size: 18px;
+  transition: 250ms;
+  outline: none;
+  border: none;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.Connector:hover {
+  cursor: pointer;
+  background: #1D3672;
+}
+
+.NFTList {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.NFTListItem {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.NFTListItem:hover .ImageContainer {
+  top: -10px;
+  transition: 250ms;
+}
+
+.ImageContainer {
+  top: 0px;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 400px;
+  height: 400px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.NFTListItemData {
+  background: #50C5B7;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 340px 20px 0;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  width: 450px;
+  min-height: 400px;
+  overflow: hidden;
+  left: -25px;
+  top: -300px;
+  margin-bottom: -250px;
+  z-index: -1;
+  position: relative;
+  font-family: 'Helvetica';
+  font-weight: 900;
+  font-size: 16px;
+  color: white;
+  text-overflow: ellipsis;
+}
+
+.ColorIcon {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.ColorPicker {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.ColorPreset {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ColorPreset:hover {
+  opacity: 0.7;
+}
